@@ -1,0 +1,6 @@
+//output: fav-destinations.html
+.panel.panel-primary
+  .panel-heading.text-center Favorite Destinations
+  .panel-body 
+    .row(ng-repeat="destination in destinations")
+      .col-md-12 {{destination.name}}

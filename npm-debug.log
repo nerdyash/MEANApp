@@ -1,0 +1,78 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'Crypto',
+1 verbose cli   '--save' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 warn package.json MeanDemo@1.0.0 No description
+6 warn package.json MeanDemo@1.0.0 No repository field.
+7 warn package.json crypto@0.0.3 crypto is also the name of a node core module.
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'Crypto', null ]
+10 verbose cache add name=undefined spec="Crypto" args=["Crypto",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'Crypto',
+11 verbose parsed url   path: 'Crypto',
+11 verbose parsed url   href: 'Crypto' }
+12 silly lockFile e8494944-Crypto Crypto
+13 verbose lock Crypto C:\Users\User\AppData\Roaming\npm-cache\e8494944-Crypto.lock
+14 silly lockFile e8494944-Crypto Crypto
+15 silly lockFile e8494944-Crypto Crypto
+16 verbose addNamed [ 'Crypto', '' ]
+17 verbose addNamed [ null, '*' ]
+18 silly lockFile 65942316-Crypto Crypto@
+19 verbose lock Crypto@ C:\Users\User\AppData\Roaming\npm-cache\65942316-Crypto.lock
+20 silly addNameRange { name: 'Crypto', range: '*', hasData: false }
+21 verbose request where is /Crypto
+22 verbose request registry https://registry.npmjs.org/
+23 verbose request id 375dc0d5b72fcb1e
+24 verbose url raw /Crypto
+25 verbose url resolving [ 'https://registry.npmjs.org/', './Crypto' ]
+26 verbose url resolved https://registry.npmjs.org/Crypto
+27 verbose request where is https://registry.npmjs.org/Crypto
+28 info trying registry request attempt 1 at 14:45:59
+29 verbose etag "2RMND4ZIWVONV2E2ZC11YV84L"
+30 http GET https://registry.npmjs.org/Crypto
+31 http 404 https://registry.npmjs.org/Crypto
+32 silly registry.get cb [ 404,
+32 silly registry.get   { 'content-type': 'application/json',
+32 silly registry.get     'cache-control': 'max-age=0',
+32 silly registry.get     'content-length': '2',
+32 silly registry.get     'accept-ranges': 'bytes',
+32 silly registry.get     date: 'Thu, 18 Aug 2016 17:46:01 GMT',
+32 silly registry.get     via: '1.1 varnish',
+32 silly registry.get     age: '0',
+32 silly registry.get     connection: 'keep-alive',
+32 silly registry.get     'x-served-by': 'cache-jfk8121-JFK',
+32 silly registry.get     'x-cache': 'MISS',
+32 silly registry.get     'x-cache-hits': '0',
+32 silly registry.get     'x-timer': 'S1471542361.247946,VS0,VE94',
+32 silly registry.get     vary: 'Accept-Encoding' } ]
+33 silly lockFile 65942316-Crypto Crypto@
+34 silly lockFile 65942316-Crypto Crypto@
+35 error 404 Not Found
+35 error 404
+35 error 404 'Crypto' is not in the npm registry.
+35 error 404 You should bug the author to publish it
+35 error 404 It was specified as a dependency of 'MeanDemo'
+35 error 404
+35 error 404 Note that you can also install from a
+35 error 404 tarball, folder, or http url, or git url.
+36 error System Windows_NT 6.2.9200
+37 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "Crypto" "--save"
+38 error cwd C:\Users\User\Desktop\MeanDemo
+39 error node -v v0.10.36
+40 error npm -v 1.4.28
+41 error code E404
+42 verbose exit [ 1, true ]

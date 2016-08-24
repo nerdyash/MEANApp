@@ -1,0 +1,11 @@
+//output: main.html
+.container
+  .jumbotron
+    h1 MeanDemo
+    p Welcome to this demo app.
+  
+  .row
+    .col-md-6
+      div(ng-include="'/partials/main/fav-sports'")
+    .col-md-6
+      div(ng-include="'/partials/main/fav-destinations'")

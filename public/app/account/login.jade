@@ -1,0 +1,18 @@
+//output: login.html
+.navbar-right(ng-controller="myNavBarLoginCtrl")
+  form.navbar-form(ng-hide="identity.isAuthenticated()")
+    .form-group
+      input.form-control(placeholder="Enter your email", ng-model="username")
+    .form-group
+      input.form-control(type="password", placeholder="Enter Password", ng-model="password")
+    button.btn.btn-primary(ng-click="signin(username, password)") SignIn
+  ul.nav.navbar-nav.navbar-right(ng-show="identity.isAuthenticated()")
+    li.dropdown
+      a.dropdown-toggle(href="", data-toggle="dropdown")
+        | {{identity.currentUser.firstName + " " + identity.currentUser.lastName}}
+        b.caret
+      ul.dropdown-menu
+        li(ng-show="identity.currentUser.isAdmin()")
+          a(href="/admin/users") Admin
+        li
+          a(href="", ng-click="signout()") Sign Out

@@ -5,14 +5,14 @@
     "jquery"
   ],
   "loadEagerly": [
-    "path/to/your/js/**/*.js"
+    "server.js"
   ],
   "dontLoad": [
     "path/to/your/js/**/*.js"
   ],
   "plugins": {
     "complete_strings": {},
-    "node": {},
+    "node-express": {},
     "lint": {},
     "angular": {},
     "requirejs": {},

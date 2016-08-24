@@ -1,0 +1,6 @@
+//output: fav-sports.html
+.panel.panel-primary
+  .panel-heading.text-center Favorite Sports
+  .panel-body 
+    .row(ng-repeat="sport in sports | filter: {featured:true}")
+      .col-md-12 {{sport.name}}    

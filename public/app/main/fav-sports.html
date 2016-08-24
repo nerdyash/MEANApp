@@ -1,0 +1,9 @@
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-center">Favorite Sports</div>
+  <div class="panel-body"> 
+    <div ng-repeat="sport in sports | filter: {featured:true}" class="row">
+      <div class="col-md-12">{{sport.name}}    </div>
+    </div>
+  </div>
+</div>

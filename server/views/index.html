@@ -3,20 +3,37 @@
 <html>
   <head>
     <base href="/">
+    <title>MeanDemo</title>
     <link rel="stylesheet" href="/css/bootstrap.css">
     <link rel="stylesheet" href="/client/toastr/toastr.css">
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body ng-app="app">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header"><a href="/" class="navbar-brand">MeanDemo
+            <h6>-This is demo App.</h6></a></div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+          </ul>
+          <div ng-include="'/partials/account/login'">   </div>
+        </div>
+      </div>
+    </div>
     <section class="content">
       <div ng-view></div>
     </section>
-    <h2></h2>
+    <footer class="container text-center">
+      <p>&copy; 2016 Yash Thakkar</p>
+    </footer>
     <!--output: script.html-->
     <script type="text/javascript" src="/client/jquery/src/jquery.js"></script>
     <script type="text/javascript" src="/client/angular/angular.js"></script>
     <script type="text/javascript" src="/client/angular-resource/angular-resource.js"></script>
     <script type="text/javascript" src="/client/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/main/mvMainCtrl.js"></script>
+    <script type="text/javascript" src="/app/account/myNavBarLoginCtrl.js"></script>
   </body>
 </html>
